@@ -4,13 +4,13 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3*/
 
 Console.Write("Введите первое число: ");
-int first = int.Parse(Console.ReadLine()!);
+int hitotsu = int.Parse(Console.ReadLine()!);
 Console.Write("Введите второе число: ");
-int second = int.Parse(Console.ReadLine()!);
-if(first > second){
-    Console.WriteLine($"{first} больше {second}");
+int futatsu = int.Parse(Console.ReadLine()!);
+if(hitotsu > futatsu){
+    Console.WriteLine($"{hitotsu} больше {futatsu}");
 }
-else Console.WriteLine($"{second} больше {first}");
+else Console.WriteLine($"{futatsu} больше {hitotsu}");
 
 /*Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 2, 3, 7 -> 7
