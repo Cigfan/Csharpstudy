@@ -16,7 +16,7 @@ a = 2 b = 10 -> нет
 a = 9; b = -3 -> да
 a = -3 b = 9 -> нет*/
 
-/*Console.Write("Введите первое число: ");
+Console.Write("Введите первое число: ");
 int first = int.Parse(Console.ReadLine()!);
 Console.Write("Введите второе число: ");
 int second = int.Parse(Console.ReadLine()!);
@@ -24,13 +24,13 @@ if (first == Convert.ToInt32(Math.Pow(second, 2)))
 {
     Console.WriteLine("Да");
 }
-else Console.WriteLine("Нет");*/
+else Console.WriteLine("Нет");
 
 /* Напишите программу, которая будет выдавать название дня недели по заданному номеру.
 3 -> Среда
 5 ->  Пятница*/
 
-/*Console.Write("Номер дня недели: ");
+Console.Write("Номер дня недели: ");
 int den = int.Parse(Console.ReadLine()!);
 if(den == 1){
     Console.WriteLine("Понедельник");
@@ -57,10 +57,10 @@ else if(den<1 || den>7){
     Console.WriteLine("Некоректный номер дня");
     }
 
-И - && (оба верные все работает)
+/*И - && (оба верные все работает)
 ИЛИ - || (или один или оба верно, остальное ложь)*/
 
-/*Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
+Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
 
 4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4"
 2 -> " -2, -1, 0, 1, 2"
@@ -71,7 +71,7 @@ int negnmbr = - nmbr;
 while(negnmbr <= nmbr){
     Console.Write($"{negnmbr}");
     negnmbr ++;
-}*/
+}
 
 Console.Write("Ваше трехзначное число: ");
 int nmbr = int.Parse(Console.ReadLine()!);
