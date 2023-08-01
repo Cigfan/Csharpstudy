@@ -18,15 +18,37 @@
 82 -> 10
 9012 -> 12*/
 
-// Console.Write("Введите Ваше число: ");
-// int raw = int.Parse(Console.ReadLine()!);
-// string cooked = raw.ToString();
-// int sum = 0;
-// for(int i = 0; i < cooked.Length; i++){
-//     sum += Convert.ToInt32(cooked[i]);
+Console.Write("Введите Ваше число: ");
+int raw = int.Parse(Console.ReadLine()!);
+string cooked = raw.ToString();
+// Console.Write(cooked.Length);
+int sum = 0;
+
+for(int i = 0; i < cooked.Length; i++){
+    //Convert.ToInt32(cooked[i]) += sum;
+    sum = Convert.ToInt32(cooked[i].ToString()) + sum;
+}
+Console.Write($"{sum}");
+
+// int i = 0;
+// while (i < cooked.Length){
+//     sum = Convert.ToInt32(cooked[i]) + sum;
+//     i++;
 // }
 // Console.Write($"{sum}");
 
 /*Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран. (можно указать любой промежуток)
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33]*/
+
+// int[] box = Randoms(8);
+// Console.WriteLine($"[{String.Join(",", box)}]");
+
+// //method
+// int[] Randoms(int size){
+//     int[] massive = new int[size];
+//     for(int i = 0; i < massive.Length; i++){
+//         massive[i] = new Random().Next(100);
+//     }
+//     return massive;
+// }
