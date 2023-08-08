@@ -73,8 +73,8 @@ while(negnmbr <= nmbr){
     negnmbr ++;
 }
 
-Console.Write("Ваше трехзначное число: ");
-int nmbr = int.Parse(Console.ReadLine()!);
+// Console.Write("Ваше трехзначное число: ");
+// int nmbr = int.Parse(Console.ReadLine()!);
 
 // % - деление с остатком
 // /- деление

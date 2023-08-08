@@ -2,15 +2,15 @@
 3, 5 -> 243 (3⁵)
 2, 4 -> 16*/
 
-// Console.Write("Введите первое число: ");
-// int first = int.Parse(Console.ReadLine()!);
-// Console.Write("Введите второе число: ");
-// int second = int.Parse(Console.ReadLine()!);
-// int power = first;
-// for(int i = 1; i < second; i++){
-//     first *= power;
-// }
-// Console.Write($"Число {power} в степени {second} равно {first}.");
+Console.Write("Введите первое число: ");
+int first = int.Parse(Console.ReadLine()!);
+Console.Write("Введите второе число: ");
+int second = int.Parse(Console.ReadLine()!);
+int power = first;
+for(int i = 1; i < second; i++){
+    first *= power;
+}
+Console.Write($"Число {power} в степени {second} равно {first}.");
 
 
 /*Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
@@ -41,14 +41,14 @@ Console.Write($"{sum}");
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33]*/
 
-// int[] box = Randoms(8);
-// Console.WriteLine($"[{String.Join(",", box)}]");
+int[] box = Randoms(8);
+Console.WriteLine($"[{String.Join(",", box)}]");
 
-// //method
-// int[] Randoms(int size){
-//     int[] massive = new int[size];
-//     for(int i = 0; i < massive.Length; i++){
-//         massive[i] = new Random().Next(100);
-//     }
-//     return massive;
-// }
+//method
+int[] Randoms(int size){
+    int[] massive = new int[size];
+    for(int i = 0; i < massive.Length; i++){
+        massive[i] = new Random().Next(100);
+    }
+    return massive;
+}

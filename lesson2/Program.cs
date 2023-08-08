@@ -13,14 +13,14 @@ else{
 // 12-> 2
 // 85 -> 8
 
-int first = new Random().Next(10, 100);
-string numstring = first.ToString();
-if(numstring[0] > numstring[1]){
-    Console.WriteLine($"{numstring[0]} больше чем {numstring[1]} в числе {first}");
-}
-else{
-    Console.WriteLine($"{numstring[1]} больше чем {numstring[0]} в числе {first}");
-}
+// int first = new Random().Next(10, 100);
+// string numstring = first.ToString();
+// if(numstring[0] > numstring[1]){
+//     Console.WriteLine($"{numstring[0]} больше чем {numstring[1]} в числе {first}");
+// }
+// else{
+//     Console.WriteLine($"{numstring[1]} больше чем {numstring[0]} в числе {first}");
+// }
 
 /*Задача 2. Напишите программу, которая будет принимать на вход два числа и выводить, является ли второе число кратным первому. 
 Если второе число не кратно числу первому, то программа выводит остаток от деления.
