@@ -1,25 +1,32 @@
-﻿/*Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь. 
-(Можно изучить метод Split).
-Пример: stringArray.Split(' ', StringSplitOptions.RemoveEmptyEntries);, 
-где первый аргумент это разделитель чисел, второе обработчик введеной последовательности)
-0, 7, 8, -2, -2 -> 2
-1, -7, 567, 89, 223-> 4*/
+﻿// Задача 41: Пользователь вводит с клавиатуры N чисел. 
+//Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
-Console.Write("Введите Ваши числа через точку с запятой: ");
-string please = string.Parse(Console.ReadLine()!);
+// Console.Write("Введите числа через пробел: ");
+// int[] numbers = GetArrayFromString(Console.ReadLine()!);
+// Console.WriteLine($"Количество чисел больше 0 –> {GetCountPositiveElements(numbers)}");
+// Console.WriteLine();
 
-int[] stop = argh(please);
-Console.Write($"Количесво чисел больше 0 = {stop}");
 
-//method
-int[] argh(please){
-    int[] justwork = new int[please.Length];
-    int icant = 0;
-    for(int i = 0; i < please.Length; i++){
-        if (please[i] > 0) icant++;
-    }
-    return justwork;
-}
+// int[] GetArrayFromString(string stringArray)
+// {
+//     string[] numS = stringArray.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+//     int[] result = new int[numS.Length];
+//     for (int i = 0; i < result.Length; i++)
+//     {
+//         result[i] = int.Parse(numS[i]);
+//     }
+//     return result;
+// }
+
+// int GetCountPositiveElements(int[] array)
+// {
+//     int count = 0;
+//     foreach (var item in array)
+//     {
+//         if(item>0) count++;
+//     }
+//     return count;
+// }
 
 /*Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями 
 y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
