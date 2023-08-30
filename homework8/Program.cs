@@ -8,9 +8,13 @@
 9 5 3 2
 8 4 4 2*/
 
-// int[,] array = GetArray(4, 4, 0, 9);
-// PrintArray(array);
-
+int[,] array = GetArray(4, 4, 0, 9);
+Console.WriteLine("Начальный массив:");
+PrintArray(array);
+int[,] sorted = Sorting(array);
+Console.WriteLine("Отсортированный массив:");
+PrintArray(sorted);
+Console.WriteLine();
 /*Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 Например, задан массив:
 1 4 7 2
@@ -174,4 +178,22 @@ int Cane(int please, int[,] array){
         else sum = 0;
     }
     return index;
+}
+//sort
+int[,] Sorting(int[,] array){
+    int check = 0;
+    int ctdw = 0;
+    while(ctdw < array.GetLength(0)){
+        for(int i = 0; i < array.GetLength(0); i++){
+            for(int j = 0; j < array.GetLength(1); j++){
+                if(j < array.GetLength(1) - 1 && array[i,j] < array[i,j+1]){
+                    check = array[i,j];
+                    array[i,j] = array[i,j+1];
+                    array[i,j+1] = check;
+                }
+            }
+        }
+        ctdw++;   
+    }
+    return array;
 }
