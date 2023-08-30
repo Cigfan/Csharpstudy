@@ -26,33 +26,6 @@ int Costyl = Cane(please, raw);
 Console.WriteLine($"Номер строки с наименьшей суммой элементов: {Costyl} строка");
 Console.WriteLine();
 
-//calculating
-int calculum(int[,] array){
-    int sums = 0;
-    int mins = 999;
-    for(int i = 0; i < array.GetLength(0); i++){
-        for(int j = 0; j < array.GetLength(1); j++){
-            sums += array[i,j];
-        }
-        if(sums < mins) mins = sums;
-        sums = 0;
-    }
-    return mins;
-}
-//Cane
-int Cane(int please, int[,] array){
-    int sum = 0;
-    int index = 0;
-    for(int i = 0; i < array.GetLength(0); i++){
-        for(int j = 0; j < array.GetLength(1); j++){
-            sum += array[i,j];
-            }
-        if(sum == please)index = i + 1;
-        else sum = 0;
-    }
-    return index;
-}
-
 /*Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 Например, даны 2 матрицы:
 2 4 | 3 4
@@ -175,4 +148,30 @@ int[,] GetSpiral(int m, int n){
         b++;
     }
     return res;
+}
+//calculating
+int calculum(int[,] array){
+    int sums = 0;
+    int mins = 999;
+    for(int i = 0; i < array.GetLength(0); i++){
+        for(int j = 0; j < array.GetLength(1); j++){
+            sums += array[i,j];
+        }
+        if(sums < mins) mins = sums;
+        sums = 0;
+    }
+    return mins;
+}
+//Cane
+int Cane(int please, int[,] array){
+    int sum = 0;
+    int index = 0;
+    for(int i = 0; i < array.GetLength(0); i++){
+        for(int j = 0; j < array.GetLength(1); j++){
+            sum += array[i,j];
+            }
+        if(sum == please)index = i + 1;
+        else sum = 0;
+    }
+    return index;
 }
