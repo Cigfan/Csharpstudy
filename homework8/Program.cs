@@ -70,7 +70,7 @@ Console.WriteLine();
 10 09 08 07*/
 
 Console.WriteLine("Спираль:");
-int[,] spiral = GetSpiral(4, 4);
+int[,] spiral = GetSpiral(6, 6);
 PrintArray(spiral);
 
 //array
@@ -197,3 +197,19 @@ int[,] Sorting(int[,] array){
     }
     return array;
 }
+
+// int[,] GetMultiplicationMatrix(int[,] arrayA, int[,] arrayB)
+// {
+//     int[,] arrayC = new int[arrayA.GetLength(0), arrayB.GetLength(1)];
+//     for (int i = 0; i < arrayA.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < arrayB.GetLength(1); j++)
+//         {
+//             for (int k = 0; k < arrayA.GetLength(1); k++)
+//             {
+//                 arrayC[i, j] += arrayA[i, k] * arrayB[k, j];
+//             }
+//         }
+//     }
+//     return arrayC;
+// }

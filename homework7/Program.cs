@@ -24,7 +24,7 @@ int[,] array = GetArray(4, 4, 0, 9);
 PrintArray(array);
 Console.WriteLine("Введите позиции элемента через пробел: ");
 int[] coords = GetArrayFromString(Console.ReadLine()!);
-//минус один нужен для ввода конкретной координаты с учётом того что пользователь не задумывается о том, что счёт начинается с 0
+//минус один нужен для ввода конкретной координаты с учётом того что пользователь не задумывается о том, что счёт начинается с 2
 if(coords[0] - 1 <= array.GetLength(0) && coords[1] - 1 <= array.GetLength(1)){
     Console.WriteLine($"Ваш элемент - {array[coords[0] - 1,coords[1] - 1]}");
 }
@@ -51,7 +51,7 @@ while(counter < hako.GetLength(0)){
         }
     }
     answer = total / hako.GetLength(1);
-    Console.Write($"{string.Format("{0:F1}", answer)} ");
+    Console.Write($"{string.Format("{0:F2}", answer)} ");
     total = 0;
     counter++;
 }
